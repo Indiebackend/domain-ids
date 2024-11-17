@@ -1,0 +1,42 @@
+{
+  "name": "@indiebackend/domain-ids",
+  "version": "1.0.0",
+  "description": "Domain-based ids compatible with UUIDS",
+  "main": "dist/index.js",
+  "repository": "https://github.com/Indiebackend/domain-ids",
+  "author": "Indiebackend",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "test": "node --import tsx --test src/**/*.spec.ts",
+    "prettier:check": "prettier . --check",
+    "prettier:write": "prettier . --write",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "base-x": "5.0.0",
+    "uuid": "11.0.3"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^10.4.8",
+    "class-validator": "0.14.1"
+  },
+  "peerDependenciesMeta": {
+    "@nestjs-validator": {
+      "optional": true
+    },
+    "class-validator": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/node": "22.9.0",
+    "prettier": "^3.3.3",
+    "tsx": "4.19.2",
+    "typescript": "5.6.3"
+  },
+  "volta": {
+    "node": "22.11.0",
+    "npm": "10.9.0"
+  }
+}
