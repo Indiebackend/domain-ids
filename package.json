@@ -22,7 +22,7 @@
     "class-validator": "0.14.1"
   },
   "peerDependenciesMeta": {
-    "@nestjs-validator": {
+    "@nestjs/common": {
       "optional": true
     },
     "class-validator": {

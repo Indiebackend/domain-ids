@@ -21,6 +21,13 @@ jobs:
         run: npm run test
       - name: Build project
         run: npm run build
+      - name: Cocogitto
+        uses: cocogitto/cocogitto-action@main
+        id: release
+        with:
+          release: true
+      - name: Update version
+        run: npm version ${{ steps.release.outputs.version }}
       - name: Publish NPM package
         run: npm publish --access public
         env:
