@@ -1,6 +1,6 @@
 {
   "name": "@indiebackend/domain-ids",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Domain-based ids compatible with UUIDS",
   "repository": "https://github.com/Indiebackend/domain-ids",
   "main": "dist/index.js",
