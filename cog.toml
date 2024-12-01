@@ -1,9 +1,7 @@
 from_latest_tag = true
 ignore_merge_commits = false
-disable_changelog = false
+disable_changelog = true
 disable_bump_commit = false
-generate_mono_repository_global_tag = true
-generate_mono_repository_package_tags = true
 branch_whitelist = []
 skip_ci = "[skip ci]"
 skip_untracked = false
