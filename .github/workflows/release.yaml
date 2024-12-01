@@ -26,15 +26,15 @@ jobs:
         id: release
         with:
           release: true
-      - name: Update version
-        run: npm version ${{ steps.release.outputs.version }}
-      - name: Push release commit
-        run: |
-          git tag -d ${{ steps.release.outputs.version }}
-          git tag ${{ steps.release.outputs.version }} HEAD
-          git push
-          git push origin ${{ steps.release.outputs.version }}
-      - name: Publish NPM package
-        run: npm publish --access public
-        env:
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      # - name: Update version
+      #   run: npm version ${{ steps.release.outputs.version }}
+      # - name: Push release commit
+      #   run: |
+      #     git tag -d ${{ steps.release.outputs.version }}
+      #     git tag ${{ steps.release.outputs.version }} HEAD
+      #     git push
+      #     git push origin ${{ steps.release.outputs.version }}
+      # - name: Publish NPM package
+      #   run: npm publish --access public
+      #   env:
+      #     NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
