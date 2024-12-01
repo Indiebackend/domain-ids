@@ -2,8 +2,13 @@
   "name": "@indiebackend/domain-ids",
   "version": "1.0.1",
   "description": "Domain-based ids compatible with UUIDS",
-  "main": "dist/index.js",
   "repository": "https://github.com/Indiebackend/domain-ids",
+  "main": "dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "author": "Indiebackend",
   "license": "MIT",
   "private": false,
@@ -11,7 +16,7 @@
     "test": "node --import tsx --test src/**/*.spec.ts",
     "prettier:check": "prettier . --check",
     "prettier:write": "prettier . --write",
-    "build": "tsc"
+    "build": "tsup"
   },
   "dependencies": {
     "base-x": "5.0.0",
@@ -32,6 +37,7 @@
   "devDependencies": {
     "@types/node": "22.9.0",
     "prettier": "^3.3.3",
+    "tsup": "^8.3.5",
     "tsx": "4.19.2",
     "typescript": "5.6.3"
   },
