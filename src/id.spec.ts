@@ -1,6 +1,6 @@
 import { describe, it } from "node:test";
 import assert from "node:assert";
-import Id from "./id";
+import { Id } from "./id";
 
 describe("Id", () => {
   it("should decode a valid uuid", () => {

@@ -7,7 +7,7 @@ const SEPARATOR = "_";
 const BASE62 = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 const b62 = base(BASE62);
 
-export default class Id {
+export class Id {
   /**
    * Generate a new uuid and encode it with the provided domain
    * @argument domain the domain (prefix) of the id

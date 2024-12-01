@@ -3,7 +3,7 @@ import {
   BadRequestException,
   PipeTransform,
 } from "@nestjs/common";
-import Id from "./id";
+import { Id } from "./id";
 
 export type ExceptionBuilder = (value: string, domain: string) => unknown;
 

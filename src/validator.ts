@@ -3,7 +3,7 @@ import {
   buildMessage,
   registerDecorator,
 } from "class-validator";
-import Id from "./id";
+import { Id } from "./id";
 
 export function IsId(domain: string, validationOptions?: ValidationOptions) {
   return function (object: Object, propertyName: string) {
